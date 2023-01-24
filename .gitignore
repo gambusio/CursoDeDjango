@@ -5,3 +5,8 @@ Modulo1/holamundo/holamundo/__pycache__/wsgi.cpython-310.pyc
 Modulo1/holamundo/holamundo/__pycache__/views.cpython-310.pyc
 Modulo1/holamundo/holamundo/__pycache__/urls.cpython-310.pyc
 Modulo1/holamundo/holamundo/__pycache__/settings.cpython-310.pyc
+Modulo1/plantillas/plantillas/__pycache__/settings.cpython-310.pyc
+.gitignore
+Modulo1/plantillas/plantillas/__pycache__/urls.cpython-310.pyc
+Modulo1/plantillas/plantillas/__pycache__/views.cpython-310.pyc
+Modulo1/plantillas/plantillas/__pycache__/wsgi.cpython-310.pyc
