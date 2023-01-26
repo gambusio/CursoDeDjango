@@ -10,13 +10,22 @@
     <h1>Hola {{name}}</h1>
     <h3>Categorías</h3>
     <ul>
+        <!-- Esto es un comentario HTML será accesible inspeccionando el html -->
+        {# Comentario de una única línea #}
+
+        {% comment %}
+            (Comentario Multilínea)
+            Recorremos las categorías y las pintamos.
+            En caso de ser la categoría code se muestra en negrita
+        {% endcomment %}
         {% for category in categories %}
             {% if category == 'code' %}
-                <li><b>{{ category }}</b></li>
+                <li><b>{{ category|upper }}</b></li>
             {% else %}
                 <li>{{ category }}</li>
             {% endif %}
         {% endfor %}
+        <h5>Total de categorías: {{categories|length}}</h5>
     </ul>
 </body>
 </html>
