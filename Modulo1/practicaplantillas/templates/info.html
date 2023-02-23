@@ -3,5 +3,9 @@
 {% block title %}Acerca de{% endblock %}
 
 {% block content %}
-    <h1>info</h1>
+    <h1>Welcome to Phillip Günterson photography studio</h1>
+    <div>
+        {% load static %}
+        <img src="{% static 'img/portrait.png' %}" alt="Phillip Günterson" width=50% class="center">
+    </div>
 {% endblock %}

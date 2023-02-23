@@ -4,4 +4,26 @@
 
 {% block content %}
     <h1>Portfolio</h1>
+    <ul>
+        <li>
+            {% load static %}
+            <img src="{% static 'img/image1.png' %}" alt="Excellent photo 1" width=50%>
+        </li>
+        <li>
+            {% load static %}
+            <img src="{% static 'img/image2.png' %}" alt="Excellent photo 2" width=50%>
+        </li>
+        <li>
+            {% load static %}
+            <img src="{% static 'img/image3.png' %}" alt="Excellent photo 3" width=50%>
+        </li>
+        <li>
+            {% load static %}
+            <img src="{% static 'img/image4.png' %}" alt="Excellent photo 4" width=50%>
+        </li>
+        <li>
+            {% load static %}
+            <img src="{% static 'img/image5.png' %}" alt="Excellent photo 5" width=50%>
+        </li>
+    </ul>
 {% endblock %}

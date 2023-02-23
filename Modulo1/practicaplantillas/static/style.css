@@ -33,6 +33,7 @@ ul li a {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -48,3 +49,10 @@ footer {
     width: 100%;
     padding: 50px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
