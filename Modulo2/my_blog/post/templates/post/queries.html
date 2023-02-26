@@ -8,7 +8,25 @@
     <title>Consultas</title>
 </head>
 <body>
-     <h3>Búsqueda limitada con offset: saltandonos los 5 primeros (5º al 10º)</h3>
+    <h3>Buscando autor cuyo nombre contiene la palabra yes</h3>
+    <ul>
+        {% for elm3 in filtered3 %}
+            <li>{{ elm3.name }} {{ elm3.email }} </li>
+        {% endfor %}
+    </ul>
+    <h3>Buscando autor donde id <= 15</h3>
+    <ul>
+        {% for elm2 in filtered2 %}
+            <li> {{ elm2.email }} </li>
+        {% endfor %}
+    </ul>
+    <h3>Elementos ordenados por email</h3>
+    <ul>
+        {% for order in orders %}
+            <li>{{ order.email }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Búsqueda limitada con offset: saltandonos los 5 primeros (5º al 10º)</h3>
     <ul>
         {% for off in offsets %}
             <li> ( {{ off.email }} ) </li>
