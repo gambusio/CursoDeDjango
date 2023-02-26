@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {# <link rel="stylesheet" href="{% static 'style.css' %}"> #}
+    <title>Consultas</title>
+</head>
+<body>
+     <h3>Búsqueda limitada con offset: saltandonos los 5 primeros (5º al 10º)</h3>
+    <ul>
+        {% for off in offsets %}
+            <li> ( {{ off.email }} ) </li>
+        {% endfor %}
+    </ul>
+    <h3>Búsqueda limitada: 10 primeros autores</h3>
+    <ul>
+        {% for lim in limits %}
+            <li> ( {{ lim.email }} ) </li>
+        {% endfor %}
+    </ul>
+    <h3>Obteniendo un único elemento (filtrando por id)</h3>
+    <p> {{ author.name }} ({{ author.email }})</p>
+    <h3>Buscando autor donde email = victoria29@example.net</h3>
+    <ul>
+        {% for elm in filtered %}
+            <li> {{ elm.name }} ( {{ elm.email }} ) </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Todos los autores</h1>
+    <ul>
+        {% for author in authors %}
+            <li> {{ author.name }} ( {{ author.email }} ) </li>
+        {% endfor %}
+    </ul>
+    <h3>Total de autores: {{ authors|length }} </h3>
+</body>
+</html>
