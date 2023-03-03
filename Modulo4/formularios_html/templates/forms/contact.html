@@ -1,0 +1,9 @@
+<form action="{% url 'goal' %}" method="GET">
+    <!-- {% csrf_token %} -->
+    <h3>Formulario de contacto</h3>
+    <label>Nombre: </label>
+    <input type="text" name="name" placeholder="Nombre">
+    <label>Comentario: </label>
+    <input type="text" name="msg" placeholder="Escribe tu comentario...">
+    <input type="submit" value="Enviar">
+</form>
