@@ -1,1 +1,1 @@
-"# CursoDeDjango de Openbootcamp código decada una de las clases" 
+CursoDeDjango de Openbootcamp código de cada una de las clases
