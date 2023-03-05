@@ -1,0 +1,36 @@
+:root {
+    --color-primary: #2ea3f2;
+    --color-text: #666;
+    --font-main: Dokyo;
+    --font-text: Roboto-regular;
+}
+
+/* Main settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+@font-face {
+    font-family: Dokyo;
+    src: url('../fonts/DOKYO.TTF');
+}
+
+@font-face {
+    font-family: Roboto-regular;
+    src: url('../fonts/Roboto.ttf');
+}
+
+/* End main settings */
+
+/* Layout settings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+}
+
+/* End layout settings */
