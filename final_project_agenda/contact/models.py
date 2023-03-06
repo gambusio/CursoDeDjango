@@ -12,4 +12,4 @@ class Contact(models.Model):
     notes = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.name + self.last_name
+        return self.name + ' ' + self.last_name
