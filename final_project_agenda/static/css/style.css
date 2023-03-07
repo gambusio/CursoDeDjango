@@ -162,4 +162,11 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.alert-success {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(120, 183, 162);
+    color: white;
+}
+
 /* End layout settings */
