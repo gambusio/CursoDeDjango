@@ -170,3 +170,30 @@ nav ul li a:hover {
 }
 
 /* End layout settings */
+
+/* Index settings */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--color-primary);
+    margin: 20px;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: var(--color-text);
+} 
+
+
+/* End Index settings */ 
