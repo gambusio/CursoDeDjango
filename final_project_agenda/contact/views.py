@@ -2,12 +2,14 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
+from django.http import HttpResponse
 
-def index(request):
-    contacts = Contact.objects.filter(name__contains=request.GET.get('search', ''))
-    context = {
-        'contacts': contacts
-    }
+def index(request, letter = None):
+    if letter != None:
+        contacts = Contact.objects.filter(name__istartswith=letter)
+    else:
+        contacts = Contact.objects.filter(name__contains=request.GET.get('search', ''))
+    context = { 'contacts': contacts }
     return render(request, 'contact/index.html', context)
 
 def view(request, id):
